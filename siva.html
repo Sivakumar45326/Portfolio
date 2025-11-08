@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sivakumar | IT Tech Support</title>
+<meta name="description" content="Portfolio of Sivakumar — IT Technical Support Specialist providing troubleshooting, network, and system maintenance solutions." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0f1a; --card:#111827; --accent:#00bfa6; --text:#f8fafc; --muted:#94a3b8; --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text);
+    line-height:1.6; padding:28px;
+  }
+  .container{max-width:900px;margin:auto;}
+  header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:32px;}
+  .logo{font-weight:700;font-size:24px;color:var(--accent);}
+  nav a{color:var(--muted);margin-left:16px;text-decoration:none;font-weight:600;}
+  nav a:hover{color:var(--accent);}
+  section{background:var(--card);padding:24px;border-radius:var(--radius);margin-bottom:24px;box-shadow:0 6px 20px rgba(0,0,0,0.4);}
+  h1,h2{margin-top:0;}
+  .hero h1{font-size:28px;margin-bottom:8px;}
+  .hero p{color:var(--muted);}
+  .btn{display:inline-block;margin-top:12px;background:var(--accent);color:#001510;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;}
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+  .project{background:#0f172a;padding:16px;border-radius:12px;}
+  .project h3{margin-top:0;}
+  .skills{display:flex;flex-wrap:wrap;gap:10px;}
+  .skill{background:#1e293b;padding:8px 14px;border-radius:8px;font-size:14px;color:var(--muted);}
+  footer{text-align:center;margin-top:30px;color:var(--muted);font-size:14px;}
+  @media (max-width:600px){header{flex-direction:column;align-items:flex-start;}}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Sivakumar</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Hi, I'm Sivakumar 👋</h1>
+      <h3>IT Technical Support Specialist</h3>
+      <p>I provide efficient tech support solutions — from hardware troubleshooting and software setup to network maintenance and system optimization. My goal is to ensure seamless operations and maximum uptime for users and systems.</p>
+      <a class="btn" href="#contact">Get in Touch</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m an IT Support professional passionate about solving system issues and ensuring smooth performance. With hands-on experience in troubleshooting, installing, and maintaining systems, I help organizations stay efficient and secure. I enjoy diagnosing problems, implementing solutions, and improving IT processes.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Work</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Network Troubleshooting Project</h3>
+          <p>Configured and resolved LAN/Wi-Fi connectivity issues for 50+ systems, improving internal uptime by 30%.</p>
+        </div>
+        <div class="project">
+          <h3>System Maintenance Automation</h3>
+          <p>Automated system health check and cleanup using PowerShell, saving 10+ hours of manual work weekly.</p>
+        </div>
+        <div class="project">
+          <h3>Helpdesk Ticket Optimization</h3>
+          <p>Improved helpdesk ticket resolution process and response time by introducing priority categorization.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">Windows & Linux Support</span>
+        <span class="skill">Networking (LAN/WAN)</span>
+        <span class="skill">Hardware Troubleshooting</span>
+        <span class="skill">Active Directory</span>
+        <span class="skill">Ticketing Tools (ServiceNow)</span>
+        <span class="skill">MS Office & Outlook</span>
+        <span class="skill">System Installation</span>
+        <span class="skill">Remote Assistance</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you’d like to connect for support, collaboration, or a job opportunity — reach out below:</p>
+      <p>📧 <a href="mailto:sivakumar.ittech@example.com" style="color:var(--accent);text-decoration:none;">sivakumar.ittech@example.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com" style="color:var(--accent);text-decoration:none;">LinkedIn</a> | <a href="https://github.com" style="color:var(--accent);text-decoration:none;">GitHub</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sivakumar — IT Tech Support | Made with 💻 in India
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
